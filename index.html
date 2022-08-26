@@ -6,13 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Backtracking</title>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-
+  
+   
+<style>
     pre {
       border: 1px solid black;
       width: 700px;
@@ -40,6 +36,16 @@
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 900;
     }
+    th{background-color: rgba(0, 0, 0, 0.17);
+      padding: 5px;
+      border: 2px solid black;
+    }
+    td{
+      
+      font-weight: bolder;
+      
+    }
+    
   </style>
 </head>
 
@@ -477,25 +483,25 @@ for each child c of n {
     However, the timing information suggests otherwise:
   </p>
   <center>
-    <table>
+    <table border="1" >
       <tr>
-        <th></th>
-        <th style="background-color: #858585a7">2 by 3 map</th>
-        <th style="background-color: #858585a7">3 by 3 map</th>
-        <th style="background-color: #858585a7">3 by 4 map</th>
+        <td></td>
+        <td style="background-color: #858585a7">2 by 3 map</td>
+        <td style="background-color: #858585a7">3 by 3 map</td>
+        <td style="background-color: #858585a7">3 by 4 map</td>
       </tr>
       <tr>
-        <td style="background-color: #858585a7">Method 1:</td>
-        <td>60 ms.</td>
-        <td>940 ms.</td>
-        <td>60530 ms. (1 minute)</td>
+        <td style="background-color: #858585a7;font-weight: 100;">Method 1:</td>
+        <td style="font-weight: 100;">60 ms.</td>
+        <td style="font-weight: 100;">940 ms.</td>
+        <td style="font-weight: 100;" >60530 ms. (1 minute)</td>
       </tr>
 
       <tr>
-        <td style="background-color: #858585a7">Method 2:</td>
-        <td>0 ms.</td>
-        <td>0 ms.</td>
-        <td>0 ms.</td>
+        <td style="background-color: #858585a7; font-weight: 100;">Method 2:</td>
+        <td style="font-weight: 100;">0 ms.</td>
+        <td style="font-weight: 100;">0 ms.</td>
+        <td style="font-weight: 100;">0 ms.</td>
       </tr>
     </table>
   </center>
@@ -694,47 +700,37 @@ for each child c of n {
     the white marbles all at the other end, and a free space in between.
   </p>
 
-   <center><table>
-      <tr>
-        <th style="background-color: #858585a7;">
-          <img src="image/black-ball.png" alt="" />
+   <center>
+    <table style="border-collapse: collapse;">
+      <tr >
+        <th>
+          <img src="/image/black-ball.png" alt="">
         </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
+        <th>
+          <img src="/image/black-ball.png" alt="">
         </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <th style="width: 40px;"></th>
+        <th><img src="/image/white-ball.png" alt=""></th>
+        <th><img src="/image/white-ball.png" alt=""></th>
       </tr>
-    </table></center>
- 
-  <p>The goal is to reverse the positions of the marbles:</p>
- 
-   <center> <table>
+    </table>
+   </center>
+   <p>The goal is to reverse the positions of the marbles:</p>
+   <center>
+    <table style="border-collapse: collapse;">
       <tr>
-        <th style="background-color: #858585a7;">
-          <img src="image/white-ball.png" alt="" />
+        <th>
+          <img src="/image/white-ball.png" alt="">
         </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
+        <th>
+          <img src="/image/white-ball.png" alt="">
         </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
+        <th style="width: 40px;"></th>
+        <th><img src="/image/black-ball.png" alt=""></th>
+        <th><img src="/image/black-ball.png" alt=""></th>
       </tr>
-    </table></center>
+    </table>
+   </center>
  
   <h5>
     The black marbles can only move to the right, and the white marbles can
@@ -750,150 +746,170 @@ for each child c of n {
 
   <p>For example, you could make the following sequence of moves:</p>
 
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">Starting Position:</h4>
   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td >Starting Position:</td>
+        <td>
+          <table style="border-collapse:collapse; margin-left: 30px;">
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th style="width: 40px;"></th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">Black Moves ahead:</h4>
-
-  <center>
+   </center>
+<br>
+   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td >Black Moves Ahead:</td>
+        <td>
+          <table style="border-collapse:collapse; margin-left: 10px;">
+            <th >
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th style="width: 40px;"></th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">White Jump:</h4>
-
-  <center>
+   </center>
+   <br>
+   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td>White Jumps:</td>
+        <td>
+          <table style="border-collapse:collapse; margin-left: 55px;">
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th style="width: 40px;"></th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+           
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">Black Moves ahead:</h4>
-
-  <center>
+   </center>
+   <br>
+   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td>Black Moves Ahead:</td>
+        <td>
+          <table  style="border-collapse:collapse; margin-left: 10px;">
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th style="width: 40px;"></th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">Black Jump:</h4>
-
-  <center>
+   </center>
+   <br>
+   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td>Black Jumps:</td>
+        <td>
+          <table  style="border-collapse:collapse; margin-left: 55px;">
+          </td>
+          <th style="width: 40px;"></th>
+          
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-
-  <h4 style="margin-left: 30%; margin-bottom: -30px;">White Moves Ahead:</h4>
-
-  <center>
+   </center>
+   <br>
+   <center>
     <table>
       <tr>
-        <th style="background-color: #858585a7">
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/black-ball.png" alt="" />
-        </th>
-        <th style="background-color: #858585a7">
-          <img src="image/white-ball.png" alt="" />
-        </th>
+        <td>White moves Ahead:</td>
+        <td>
+          <table style="border-collapse:collapse; margin-left: 10px;">
+          </td>
+          <th style="width: 40px;"></th>
+          
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/black-ball.png" alt="">
+            </th>
+            <th>
+              <img src="/image/white-ball.png" alt="">
+            </th>
+          </table>
+        </td>
       </tr>
     </table>
-  </center>
-  <h4 style="margin-left: 30%">Stuck!</h4>
+   </center>
+   
+   
+
+   
+    <table  style="margin-left: 530px;" >
+      <tr >
+        <td >Stuck!</td>
+      </tr>
+    </table>
+   
 
   <p>
     The backtracking method is named solvable and returns a boolean. In
